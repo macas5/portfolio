@@ -2,6 +2,21 @@
   background-color: #343a40;
 }
 
-.grey {
+.gray {
+  color: rgba(255,255,255,.5);
+}
+
+.a-gray {
+  color: rgba(255,255,255,.5);
+}
+.a-gray:hover {
+  color: rgba(255,255,255,.75);
+}
+
+.nostyle, .nostyle:visited, .nostyle:hover {
+  text-decoration: none;
+}
+
+#footer {
   color: rgba(255,255,255,.5);
 }

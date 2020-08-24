@@ -2,16 +2,20 @@ import React from 'react';
 
 import './App.css';
 import Header from './components/Header/Header';
-import Navbara from './components/Navbar/Navbar';
-import Body from './components/Body/Body';
+import MyNavbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-70-ns center shadow-2">
       <Header />
-      <Navbara />
-      <Body />
+      <MyNavbar />
+      <Home />
+      <About />
+      <Projects />
       <Footer />
     </div>
   );

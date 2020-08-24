@@ -2,12 +2,19 @@
   background-color: #666582;
 }
 
-.mynavbar {
-  position: -webkit-sticky;
-  position: sticky;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0rem 2rem;
+/* .dropdown-menu {
+  background-color: #343a40 !important;
+} */
+
+nav .dropdown-menu {
+  background-color: #343a40;
+}
+
+nav .dropdown-divider {
+  border-color: rgba(255,255,255,.5);
+}
+
+nav .dark {
+  background-color: #343a40;
+  color: rgba(255,255,255,.5);
 }
