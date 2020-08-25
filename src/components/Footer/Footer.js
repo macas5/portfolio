@@ -13,7 +13,7 @@ const Footer = () => {
         href="https://linkedin.com/" 
         target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
       </ul>
-      <p className='ma0'>This website was created by Matas Kalinauskas using React</p>
+      <p className='ma0'>This website was created by myself using React</p>
       <p className='ma0'>mkalinauskas1993@gmail.com</p>
     </footer>
   );
