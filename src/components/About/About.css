@@ -1,3 +1,9 @@
 .w100 {
   width: 100%;
 }
+
+@media screen and (min-width: 60em){
+  #about .w32-l {
+    width: 32rem;
+  }
+}
