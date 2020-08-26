@@ -1,7 +1,7 @@
 {
-  "name": "Test Project",
-  "site": "https://example.com",
-  "repo": "https://github.com/macas5/portfolio",
+  "name": "Smart Brain",
+  "site": "https://macas5.github.io/smart-brain/",
+  "repo": "https://github.com/macas5/smart-brain",
   "outline": "This is a test project to check if everything works.",
   "frameworks": [
     "Framework 1",

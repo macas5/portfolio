@@ -6,7 +6,7 @@ const Projects = () => {
     <div id="projects" className='mv3'>
       <h2 className='center'>My projects</h2>
       <Project projectName="TestProject"/>
-      <Project projectName="TestProject"/>
+      <Project projectName="ThisSite"/>
     </div>
   );
 }

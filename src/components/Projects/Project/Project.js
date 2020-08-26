@@ -56,34 +56,46 @@ class Project extends React.Component {
           </div>
           <div className='w-100 w-50-l'>
             {/* Specifics */}
-            <div>
-              <p>Frameworks used:</p>
-              <ul className='tl'>
-                {frameworks}
-              </ul>
-            </div>
-            <div>
-              <p>This website can:</p>
-              <ul className='tl'>
-                {ability}
-              </ul>
-            </div>
+            {frameworks.length ? 
+              <div>
+                <p>Frameworks used:</p>
+                <ul className='tl'>
+                  {frameworks}
+                </ul>
+              </div>
+            :
+              <div/>
+            }
+            
+            {ability.length ? 
+              <div>
+                <p>This website can:</p>
+                <ul className='tl'>
+                  {ability}
+                </ul>
+              </div>
+            :
+              <div/>
+            }
+            
           </div>
         </div>
         <div className='w-100 w-40-l flex flex-wrap'>
           <img src={preview} alt='Preview' className='w-100 pr-img center'/>
   
           <div className='center ma3'>
-            <a className='button-visit ma2' 
-            href={site}
-            target="_blank" rel="noopener noreferrer">Visit site</a>
-  
+          {site !== "https://mkalinauskas.com" ?
+              <a className='button-visit ma2' 
+              href={site}
+              target="_blank" rel="noopener noreferrer">Visit site</a>
+          :
+              <p className='button-visit-disabled ma2' >Visit site</p>
+          }
             <a className='button-repo ma2 di' 
             href={repo}
             target="_blank" rel="noopener noreferrer">
               <img src={ghMark} width='14px' alt='GitHub Logo'/> Repository</a>
           </div>  
-  
         </div>
       </article>
     )
