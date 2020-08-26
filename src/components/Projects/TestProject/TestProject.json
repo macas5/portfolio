@@ -1,0 +1,17 @@
+{
+  "name": "Test Project",
+  "site": "https://mkalinauskas.com",
+  "repo": "https://github.com/macas5/portfolio",
+  "outline": "This is a test project to check if everything works.",
+  "frameworks": [
+    "Framework 1",
+    "Framework 2",
+    "Framework 3"
+  ],
+  "ability": [
+    "Thing",
+    "Other thing",
+    "Thingy",
+    "Last Thing"
+  ]
+}

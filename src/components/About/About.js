@@ -24,6 +24,8 @@ const About = () => {
             <li>C++</li>
           </ul>
           <ul>
+            <li>Git</li>
+            <li>NPM</li>
             <li>React</li>
             <li>NodeJS</li>
             <li>Express</li>

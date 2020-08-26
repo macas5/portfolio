@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Project from './Project/Project';
 
 const Projects = () => {
   return (
-    <article>
-      Projects
-    </article>
+    <div id="projects" className='mv3'>
+      <h2 className='center'>My projects</h2>
+      <Project projectName="TestProject"/>
+      <Project projectName="TestProject"/>
+    </div>
   );
 }
 
