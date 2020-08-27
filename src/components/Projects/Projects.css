@@ -1,0 +1,8 @@
+.mw12{
+  max-width: 195rem;
+}
+
+#projects .link, #projects .link:visited {
+  text-decoration: none;
+  color: black;
+}

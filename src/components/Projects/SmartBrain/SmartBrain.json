@@ -2,16 +2,17 @@
   "name": "Smart Brain",
   "site": "https://macas5.github.io/smart-brain/",
   "repo": "https://github.com/macas5/smart-brain",
-  "outline": "This is a test project to check if everything works.",
+  "outline": "You can pick a photo from a website and it will detect faces inside that photo. It is very responsive (you can go as low as with a 200px width screen)",
   "frameworks": [
-    "Framework 1",
-    "Framework 2",
-    "Framework 3"
+    "React",
+    "Node JS",
+    "Express"
   ],
   "ability": [
-    "Thing",
-    "Other thing",
-    "Thingy",
-    "Last Thing"
+    "Face detection",
+    "Website responsiveness",
+    "Register/Login user accounts",
+    "Keeping users logged in through JWT",
+    "User rankings"
   ]
 }

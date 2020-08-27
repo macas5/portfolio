@@ -4,12 +4,10 @@ import './About.css'
 
 const About = () => {
   return (
-    <div id='about' className='flex flex-wrap'>
-      <article className='w100 w32-l center shadow-1 ma3 tl'>
-        <h2 className='tc'>Who am I?</h2>
-        <p className='ma3'>I am Lithuanian developer who currently lives in UK.</p>
-        <p className='ma3'>I am excited to build things which has potential to reach people across the world
-        and I believe the time to make such things is best there ever was.</p>
+    <div id='about' className='flex flex-wrap center max-width-70'>
+      <article className='w-100 w32-l center shadow-1 ma3 tl'>
+        <h2 className='tc basis-100'>Who am I?</h2>
+        <p className='ma3'>I am a developer who is excited to build things which has potential to reach people across the world and I believe the time to make such things is best there ever was.</p>
       </article>
       <article className='w100 w32-l center shadow-1 ma3 tl flex flex-wrap'>
         <h2 className='tc basis-100'>What can I do?</h2>

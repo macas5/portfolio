@@ -46,12 +46,11 @@ class Project extends React.Component {
   render(){
     const { name, site, repo, outline, frameworks, ability, preview } = this.state;
     return (
-      <article className='center shadow-1 ma3 flex flex-wrap pa3'>
+      <article className='center shadow-1 ma3 flex flex-wrap pa3 mw8'>
         <h3 className='center w-100'>{name}</h3>
         <div className='flex flex-wrap w-100 w-60-l pa3 mr-auto'>
           {/* Project description */}
           <div className='w-100 w-50-l mr-auto'>
-            {/* Basic outline */}
             <p>{outline}</p>
           </div>
           <div className='w-100 w-50-l'>
@@ -69,7 +68,7 @@ class Project extends React.Component {
             
             {ability.length ? 
               <div>
-                <p>This website can:</p>
+                <p>Features:</p>
                 <ul className='tl'>
                   {ability}
                 </ul>
@@ -80,10 +79,10 @@ class Project extends React.Component {
             
           </div>
         </div>
-        <div className='w-100 w-40-l flex flex-wrap'>
+        <div className='w-100 w-40-l'>
           <img src={preview} alt='Preview' className='w-100 pr-img center'/>
   
-          <div className='center ma3'>
+          <div className='center ma3 flex flex-wrap justify-center'>
           {site !== "https://mkalinauskas.com" ?
               <a className='button-visit ma2' 
               href={site}
