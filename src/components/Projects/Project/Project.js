@@ -46,7 +46,7 @@ class Project extends React.Component {
   render(){
     const { name, site, repo, outline, frameworks, ability, preview } = this.state;
     return (
-      <article className='center shadow-1 ma3 flex flex-wrap pa3 mw8'>
+      <article className='shadow-1 ma3 flex flex-wrap pa3 mw8'>
         <h3 className='center w-100'>{name}</h3>
         <div className='flex flex-wrap w-100 w-60-l pa3 mr-auto'>
           {/* Project description */}

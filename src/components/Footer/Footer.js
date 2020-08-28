@@ -10,7 +10,7 @@ const Footer = () => {
         href="https://github.com/macas5?tab=repositories" 
         target="_blank" rel="noopener noreferrer">GitHub</a></li>
         <li className='list mh2'><a className='a-gray nostyle' 
-        href="https://linkedin.com/" 
+        href="https://www.linkedin.com/in/matas-kalinauskas-a6b786b3/" 
         target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
       </ul>
       <p className='ma0'>This website was created by myself using React</p>
