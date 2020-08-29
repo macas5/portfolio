@@ -1,9 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import AOS from 'aos';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+
+import './index.css';
+import 'aos/dist/aos.css'
 import 'tachyons';
+
+AOS.init({
+  // once: true
+})
 
 ReactDOM.render(
   <React.StrictMode>

@@ -10,17 +10,19 @@ import './Contact.css'
 
 const Contact = () => {
   return (
-    <article className='flex flex-wrap justify-center center ma4 shadow-1 mw7'>
+    <article id='contact' className='flex flex-wrap justify-center center ma4 shadow-1 mw7'>
       <h2 className='w-100'>Ways to contact me</h2>
-      <ContactMe />
+      <ContactMe className='ayy lmao'/>
       <div className='tl ma3 flex flex-column justify-center'>
-        <a 
-        className='button-blue'
+        <a data-aos='fade-left' data-aos-delay='100' data-aos-anchor='#contact-form' 
+        className='button-blue grow'
         href='mailto:mkalinauskas1993@gmail.com'>
         <img src={GmailLogo} alt='Gmail logo' height='14px'/> mkalinauskas1993@gmail.com</a><br/>
-        <a className='button-blue' 
+        <a data-aos='fade-left' data-aos-delay='200' data-aos-anchor='#contact-form' 
+        className='button-blue grow' 
         href="https://www.linkedin.com/in/matas-kalinauskas-a6b786b3/" 
-        target="_blank" rel="noopener noreferrer"><img src={LILogo} alt='LinkedIn logo' height='14px'/> LinkedIn</a>
+        target="_blank" rel="noopener noreferrer">
+        <img src={LILogo} alt='LinkedIn logo' height='14px'/> LinkedIn</a>
       </div>
     </article>
   )

@@ -46,7 +46,7 @@ class Project extends React.Component {
   render(){
     const { name, site, repo, outline, frameworks, ability, preview } = this.state;
     return (
-      <article className='shadow-1 ma3 flex flex-wrap pa3 mw8'>
+      <article className='shadow-1 ma3 flex flex-wrap pa3 mw8' data-aos='zoom-out'>
         <h3 className='center w-100'>{name}</h3>
         <div className='flex flex-wrap w-100 w-60-l pa3 mr-auto'>
           {/* Project description */}
@@ -84,13 +84,13 @@ class Project extends React.Component {
   
           <div className='center ma3 flex flex-wrap justify-center'>
           {site !== "https://mkalinauskas.com" ?
-              <a className='button-visit ma2' 
+              <a className='button-visit ma2 grow' 
               href={site}
               target="_blank" rel="noopener noreferrer">Visit site</a>
           :
               <p className='button-visit-disabled ma2' >Visit site</p>
           }
-            <a className='button-repo ma2 di' 
+            <a className='button-repo ma2 grow' 
             href={repo}
             target="_blank" rel="noopener noreferrer">
               <img src={ghMark} width='14px' alt='GitHub Logo'/> Repository</a>

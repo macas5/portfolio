@@ -19,7 +19,9 @@ export default class MailMe extends React.Component {
     const { status } = this.state;
     return (
       <form
-        className='flex flex-wrap w-100 mw5 ma3'
+        data-aos='zoom-in'
+        id='contact-form'
+        className={'flex flex-wrap w-100 mw5 ma3 ' + this.props.className}
         onSubmit={this.submitForm}
         action="https://formspree.io/myynqewv"
         method="POST"
@@ -30,7 +32,7 @@ export default class MailMe extends React.Component {
         <label className='w-100 tl mt3'>Message:</label>
         <textarea className ='' type="text" name="message" rows='4' cols='50'/>
         {status === "SUCCESS" ? <p className='center ma2'>Thanks!</p> : 
-          <button className='center ma2 button-blue'>Submit</button>}
+          <button className='center ma2 button-blue grow'>Submit</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
     );

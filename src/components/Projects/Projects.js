@@ -13,7 +13,7 @@ const Projects = () => {
         <Project projectName="ThisSite"/>
       </div>
       <h3>If you would like to see more of my works visit my</h3>
-      <a className='button-repo ma2 di fl-basis-100' 
+      <a className='button-repo ma2 fl-basis-100 grow' 
       href='https://github.com/macas5?tab=repositories'
       target="_blank" rel="noopener noreferrer">
       <img src={ghMark} width='14px' alt='GitHub Logo'/> GitHub Account</a>

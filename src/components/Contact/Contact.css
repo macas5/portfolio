@@ -23,3 +23,6 @@
 	top:1px;
 }
 
+#contact .grow:hover {
+	transform: scale(1.05);
+}

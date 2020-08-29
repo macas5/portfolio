@@ -14,19 +14,30 @@ const About = () => {
         <p className='ma3 basis-100'>My knowledge includes these languages and frameworks:</p>
         <div className='flex flex-wrap'>
           <ul className='mr5'>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PostgreSQL</li>
-            <li>Java</li>
-            <li>C++</li>
+            <li data-aos='fade-left' id='list-top-row' 
+            data-aos-delay='50'>HTML</li>
+            <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
+            data-aos-delay='100'>CSS</li>
+            <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
+            data-aos-delay='150'>JavaScript</li>
+            <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
+            data-aos-delay='200'>PostgreSQL</li>
+            <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
+            data-aos-delay='250'>Java</li>
+            <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
+            data-aos-delay='300'>C++</li>
           </ul>
           <ul>
-            <li>Git</li>
-            <li>NPM</li>
-            <li>React</li>
-            <li>NodeJS</li>
-            <li>Express</li>
+            <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
+            data-aos-delay='350'>Git</li>
+            <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
+            data-aos-delay='400'>NPM</li>
+            <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
+            data-aos-delay='450'>React</li>
+            <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
+            data-aos-delay='500'>NodeJS</li>
+            <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
+            data-aos-delay='550'>Express</li>
           </ul>
         </div>
       </article>
