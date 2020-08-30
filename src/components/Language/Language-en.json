@@ -1,0 +1,39 @@
+{
+  "header": {
+    "myname": "My name is Matas Kalinauskas",
+    "portfolio": "And this is my portfolio"
+  },
+  "home": {
+    "welcome": "Welcome to my portfolio. Here you will find projects done by me"
+  },
+  "about": {
+    "who": "Who am I?",
+    "whoDesc": "I am a developer who is thrilled about building things which has potential to reach people across the world and I believe the time to do such things is best there ever was.",
+    "knowledge": "What can I do?",
+    "knowledgeDesc": "My knowledge includes these languages and frameworks"
+  },
+  "projects": {
+    "title": "My projects",
+    "moreWorks": "If you would like to see more of my works visit my",
+    "moreWorksButton": "GitHub Account",
+    "project": {
+      "frameworks": "Frameworks used",
+      "features": "Features",
+      "visit": "Visit site",
+      "repo": "Repository"
+    }
+  },
+  "contact": {
+    "title": "Ways to contact me",
+    "mailForm": {
+      "email": "Email",
+      "message": "Message",
+      "submit": "Submit",
+      "success": "Thanks!",
+      "error": "Ooops! There was an error."
+    }
+  },
+  "footer": {
+    "text": "This website was created by myself using React"
+  }
+}

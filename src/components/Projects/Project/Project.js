@@ -4,9 +4,10 @@ import ghMark from './GH-Mark-Light.png';
 import './Project.css';
 
 class Project extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
+      lang: "",
       name: "",
       site: "",
       repo: "",
@@ -16,19 +17,20 @@ class Project extends React.Component {
       ability: []
     }
   }
-  setStates = (projectName) => {
-    const data = require(`../${projectName}/${projectName}.json`);
+  setStates = (projectName, lang) => {
+    const data = require(`../${projectName}/${projectName}-${lang}.json`);
     const preview = require(`../${projectName}/${projectName}.png`);
-
+    
     const frameworks = data.frameworks.map((data, index) => {
       return <li key={index}>{data}</li>
     })
-
+    
     const ability = data.ability.map((data, index) => {
       return <li key={index}>{data}</li>
     })
-
+    
     this.setState({
+      lang: lang,
       name: data.name,
       site: data.site,
       repo: data.repo,
@@ -37,14 +39,17 @@ class Project extends React.Component {
       ability: ability,
       preview: preview
     })
-}
-
-  componentDidMount(){
-    this.setStates(this.props.projectName);
   }
 
+  componentDidUpdate(){
+    if (this.props.lang !== this.state.lang){
+      this.setStates(this.props.projectName, this.props.lang);
+    }
+  }
+  
   render(){
     const { name, site, repo, outline, frameworks, ability, preview } = this.state;
+    const { projectText } = this.props;
     return (
       <article className='shadow-1 ma3 flex flex-wrap pa3 mw8' data-aos='zoom-out'>
         <h3 className='center w-100'>{name}</h3>
@@ -57,7 +62,7 @@ class Project extends React.Component {
             {/* Specifics */}
             {frameworks.length ? 
               <div>
-                <p>Frameworks used:</p>
+                <p>{projectText.frameworks}:</p>
                 <ul className='tl'>
                   {frameworks}
                 </ul>
@@ -68,7 +73,7 @@ class Project extends React.Component {
             
             {ability.length ? 
               <div>
-                <p>Features:</p>
+                <p>{projectText.features}:</p>
                 <ul className='tl'>
                   {ability}
                 </ul>
@@ -86,14 +91,14 @@ class Project extends React.Component {
           {site !== "https://mkalinauskas.com" ?
               <a className='button-visit ma2 grow' 
               href={site}
-              target="_blank" rel="noopener noreferrer">Visit site</a>
+              target="_blank" rel="noopener noreferrer">{projectText.visit}</a>
           :
-              <p className='button-visit-disabled ma2' >Visit site</p>
+              <p className='button-visit-disabled ma2' >{projectText.visit}</p>
           }
             <a className='button-repo ma2 grow' 
             href={repo}
             target="_blank" rel="noopener noreferrer">
-              <img src={ghMark} width='14px' alt='GitHub Logo'/> Repository</a>
+              <img src={ghMark} width='14px' alt='GitHub Logo'/> {projectText.repo}</a>
           </div>  
         </div>
       </article>

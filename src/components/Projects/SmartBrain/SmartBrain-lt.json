@@ -1,0 +1,18 @@
+{
+  "name": "Smart Brain",
+  "site": "https://macas5.github.io/smart-brain/",
+  "repo": "https://github.com/macas5/smart-brain",
+  "outline": "Įvedus nuotraukos nuorodą puslapis pasinaudojęs Clarifai API aptiks veidus ir juos apibrauks. Puslapis yra labai reaktyvus, jūs galite patogiai naudotis puslapiu su įranga, kurios ekrano rezoliucija yra iki 200 pikselių pločio",
+  "frameworks": [
+    "React",
+    "Node JS",
+    "Express"
+  ],
+  "ability": [
+    "Veidų atpažinimas",
+    "Puslapio reaktyvumas",
+    "Galimybė susikurti ir prisijungti prie savos paskyros",
+    "Vartotojai lieka prisijunge naudojant JWT technologiją",
+    "Vartotojų reitingai"
+  ]
+}

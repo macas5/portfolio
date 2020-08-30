@@ -1,10 +1,10 @@
 import React from 'react'
 import DeskIllustration from './desk-illustration.svg';
 
-const Home = () => {
+const Home = ({homeText}) => {
   return (
     <article id="home" className='pa3 tl f4 tc'>
-      <p className='mh3 mv0'>Welcome to my portfolio. Here you will find projects done by me</p>
+      <p className='mh3 mv0'>{homeText.welcome}</p>
       <img src={DeskIllustration} alt="desk" className='mw6' data-aos='fade-down'/>
     </article>
   );

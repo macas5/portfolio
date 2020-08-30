@@ -1,0 +1,12 @@
+{
+  "name": "Ši svetainė",
+  "site": "https://mkalinauskas.com",
+  "repo": "https://github.com/macas5/portfolio",
+  "outline": "Tai yra ši svetainė. Kadangi jūs esate jau čia, manau, kad nereikia jums aiškinti šitos svetainės prasmę. Šis puslapis yra labai reaktyvus, jūs galite jį žiūrėti patogiai nuo mažų telefonų iki didelių televizorių",
+  "frameworks": [
+    "React"
+  ],
+  "ability": [
+    "Puslapio reaktyvumas"
+  ]
+}

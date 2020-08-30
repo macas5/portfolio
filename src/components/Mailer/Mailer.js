@@ -17,6 +17,7 @@ export default class MailMe extends React.Component {
 
   render() {
     const { status } = this.state;
+    const { mailerText } = this.props;
     return (
       <form
         data-aos='zoom-in'
@@ -27,13 +28,13 @@ export default class MailMe extends React.Component {
         method="POST"
       >
         {/* <!-- add your custom form HTML here --> */}
-        <label className='w-100 tl'>Email:</label>
+        <label className='w-100 tl'>{mailerText.email}:</label>
         <input className ='w-100' type="email" name="email" />
-        <label className='w-100 tl mt3'>Message:</label>
+        <label className='w-100 tl mt3'>{mailerText.message}:</label>
         <textarea className ='' type="text" name="message" rows='4' cols='50'/>
-        {status === "SUCCESS" ? <p className='center ma2'>Thanks!</p> : 
-          <button className='center ma2 button-blue grow'>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+        {status === "SUCCESS" ? <p className='center ma2'>{mailerText.success}</p> : 
+          <button className='center ma2 button-blue grow'>{mailerText.submit}</button>}
+        {status === "ERROR" && <p>{mailerText.error}</p>}
       </form>
     );
   }

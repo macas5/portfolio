@@ -1,0 +1,17 @@
+{
+  "name": "Tikrinamasis projektas",
+  "site": "https://example.com",
+  "repo": "https://github.com/macas5/portfolio",
+  "outline": "Šitas projektas yra sukurtas testo tikslams",
+  "frameworks": [
+    "Framework 1",
+    "Framework 2",
+    "Framework 3"
+  ],
+  "ability": [
+    "Dalykas",
+    "Kitas dalykas",
+    "Dalykėlis",
+    "Paskutinis dalykas"
+  ]
+}

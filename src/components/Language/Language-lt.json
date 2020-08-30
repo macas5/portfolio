@@ -1,0 +1,39 @@
+{
+  "header": {
+    "myname": "Aš esu Matas Kalinauskas",
+    "portfolio": "Ir čia mano portfolio"
+  },
+  "home": {
+    "welcome": "Sveiki atvykę į mano portfolio. Čia rasite mano kurtus projektus"
+  },
+  "about": {
+    "who": "Apie save",
+    "whoDesc": "Aš esu programuotojas, kuris yra susižavėjęs galimybę kurti tai, kad turi galimybę pasiekti žmones visame pasaulyje. Aš manau, kad dabar yra pati geriausia galimybė kurti tokius dalykus.",
+    "knowledge": "Ką aš sugebu?",
+    "knowledgeDesc": "Mano žinios apima šitas kalbas ir struktūras"
+  },
+  "projects": {
+    "title": "Mano projektai",
+    "moreWorks": "Jeigu norite pamatyti daugiau mano darbų, aplankykite mano",
+    "moreWorksButton": "GitHub Paskirą",
+    "project": {
+      "frameworks": "Panaudotos struktūros",
+      "features": "Galimybės",
+      "visit": "Apsilankykite",
+      "repo": "Talpykla"
+    }
+  },
+  "contact": {
+    "title": "Susisiekite su manimi",
+    "mailForm": {
+      "email": "E-Paštas",
+      "message": "Žinutė",
+      "submit": "Siųsti",
+      "success": "Ačiū!",
+      "error": "Ups! Nutiko klaida"
+    }
+  },
+  "footer": {
+    "text": "Ši svetainė yra mano kurta naudojant React"
+  }
+}

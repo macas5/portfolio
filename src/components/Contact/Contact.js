@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ContactMe from '../Mailer/Mailer'
+import Mailer from '../Mailer/Mailer'
 
 import LILogo from './LI-In-Bug.png'
 import GmailLogo from './gmail.png'
@@ -8,11 +8,11 @@ import './Contact.css'
 
 
 
-const Contact = () => {
+const Contact = ({contactText}) => {
   return (
     <article id='contact' className='flex flex-wrap justify-center center ma4 shadow-1 mw7'>
-      <h2 className='w-100'>Ways to contact me</h2>
-      <ContactMe className='ayy lmao'/>
+      <h2 className='w-100'>{contactText.title}</h2>
+      <Mailer mailerText={contactText.mailForm}/>
       <div className='tl ma3 flex flex-column justify-center'>
         <a data-aos='fade-left' data-aos-delay='100' data-aos-anchor='#contact-form' 
         className='button-blue grow'
