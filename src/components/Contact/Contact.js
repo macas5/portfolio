@@ -10,7 +10,7 @@ import './Contact.css'
 
 const Contact = ({contactText}) => {
   return (
-    <article id='contact' className='flex flex-wrap justify-center center ma4 shadow-1 mw7'>
+    <article id='contact' className='flex flex-wrap justify-center center ma4 shadow mw7'>
       <h2 className='w-100'>{contactText.title}</h2>
       <Mailer mailerText={contactText.mailForm}/>
       <div className='tl ma3 flex flex-column justify-center'>

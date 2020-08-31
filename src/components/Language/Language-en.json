@@ -1,4 +1,8 @@
 {
+  "settingsBar": {
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
   "header": {
     "myname": "My name is Matas Kalinauskas",
     "portfolio": "And this is my portfolio"

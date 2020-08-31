@@ -1,4 +1,8 @@
 {
+  "settingsBar": {
+    "light": "Šviesus režimas",
+    "dark": "Tamsus režimas"
+  },
   "header": {
     "myname": "Aš esu Matas Kalinauskas",
     "portfolio": "Ir čia mano portfolio"

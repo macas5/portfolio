@@ -7,6 +7,8 @@
     "React"
   ],
   "ability": [
-    "Puslapio reaktyvumas"
+    "Puslapio reaktyvumas",
+    "Kelių kalbų palaikymas",
+    "Šviesus ir tamsus režimai"
   ]
 }

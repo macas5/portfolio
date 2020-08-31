@@ -1,5 +1,16 @@
 #SettingsBar {
-  background: linear-gradient(90deg, rgba(234,234,247,1) -3%, rgba(102,101,130,1) 5%, rgba(102,101,130,1) 95%, rgba(234,234,247,1) 103%);
+  min-height: 2rem;
+}
+
+#SettingsBar p {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: auto;
+  padding-bottom: auto;
+  cursor: pointer;
+
 }
 
 #SettingsBar img {

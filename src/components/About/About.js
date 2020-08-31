@@ -5,11 +5,11 @@ import './About.css'
 const About = ({aboutText}) => {
   return (
     <div id='about' className='flex flex-wrap center max-width-70'>
-      <article className='w-100 w32-l center shadow-1 ma3 tl'>
+      <article className='w-100 w32-l center shadow ma3 tl'>
         <h2 className='tc basis-100'>{aboutText.who}</h2>
         <p className='ma3'>{aboutText.whoDesc}</p>
       </article>
-      <article className='w100 w32-l center shadow-1 ma3 tl flex flex-wrap'>
+      <article className='w100 w32-l center shadow ma3 tl flex flex-wrap'>
         <h2 className='tc basis-100'>{aboutText.knowledge}</h2>
         <p className='ma3 basis-100'>{aboutText.knowledgeDesc}:</p>
         <div className='flex flex-wrap'>
