@@ -28,10 +28,12 @@ export default class MailMe extends React.Component {
         method="POST"
       >
         {/* <!-- add your custom form HTML here --> */}
-        <label className='w-100 tl'>{mailerText.email}:</label>
-        <input className ='w-100 black' type="email" name="email" />
-        <label className='w-100 tl mt3'>{mailerText.message}:</label>
-        <textarea className ='black' type="text" name="message" rows='4' cols='50'/>
+        <label className='w-100 tl'>{mailerText.email}:
+          <input className ='w-100 black bg-white' type="email" name="email" width='25rem' />
+        </label>
+        <label className='w-100 tl mt3'>{mailerText.message}: <br/>
+          <textarea className ='black bg-white w-100' type="text" name="message" rows='4' cols='25'/>
+        </label>
         {status === "SUCCESS" ? <p className='center ma2'>{mailerText.success}</p> : 
           <button className='center ma2 button-blue grow'>{mailerText.submit}</button>}
         {status === "ERROR" && <p>{mailerText.error}</p>}
