@@ -10,4 +10,8 @@ export const GlobalStyle = createGlobalStyle`
   
   .shadow {
     box-shadow: ${({ theme }) => theme.shadow};
+  }
+  
+  .active {
+    background: ${({ theme }) => theme.active};
   }`

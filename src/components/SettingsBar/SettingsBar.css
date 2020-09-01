@@ -7,14 +7,41 @@
   padding-left: 0.5rem;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: auto;
-  padding-bottom: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   cursor: pointer;
-
 }
 
 #SettingsBar img {
   max-height: 2rem;
   max-width: auto;
   margin-left: 1rem;
+}
+
+.height-2 {
+  height: 2rem;
+}
+
+@media screen and (max-width: 43em){
+  #SettingsBar {
+    min-height: 1.3rem;
+  }
+
+  #SettingsBar img {
+    max-height: 1.3rem;
+    max-width: auto;
+    margin-left: 0.7rem;
+  }
+
+  #SettingsBar p {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 0.7rem;
+  }
+
+  .height-2 {
+    height: 1.3rem;
+  }
 }

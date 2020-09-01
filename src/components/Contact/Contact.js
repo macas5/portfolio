@@ -17,12 +17,12 @@ const Contact = ({contactText}) => {
         <a data-aos='fade-left' data-aos-delay='100' data-aos-anchor='#contact-form' 
         className='button-blue grow'
         href='mailto:mkalinauskas1993@gmail.com'>
-        <img src={GmailLogo} alt='Gmail logo' height='14px'/> mkalinauskas1993@gmail.com</a><br/>
+        <img src={GmailLogo} alt='Gmail logo'/> mkalinauskas1993@gmail.com</a><br/>
         <a data-aos='fade-left' data-aos-delay='200' data-aos-anchor='#contact-form' 
         className='button-blue grow' 
         href="https://www.linkedin.com/in/matas-kalinauskas-a6b786b3/" 
         target="_blank" rel="noopener noreferrer">
-        <img src={LILogo} alt='LinkedIn logo' height='14px'/> LinkedIn</a>
+        <img src={LILogo} alt='LinkedIn logo'/> LinkedIn</a>
       </div>
     </article>
   )

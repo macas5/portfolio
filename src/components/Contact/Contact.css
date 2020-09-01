@@ -26,3 +26,9 @@
 #contact .grow:hover {
 	transform: scale(1.05);
 }
+
+#contact img {
+	height: 12px;
+}
+
+

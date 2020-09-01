@@ -18,6 +18,8 @@ class App extends React.Component {
     this.state={
       lang: 'en',
       style: '',
+      isAuto: false,
+      activeStyle: '',
       text: {
         "settingsBar": {},
         "header": {},
@@ -62,7 +64,7 @@ class App extends React.Component {
 
   setAutoStyle = () => {
     const date = new Date();
-    if ((date.getHours() > 7) && (date.getHours() < 22)){
+    if ((date.getHours() > 7) && (date.getHours() < 18)){
       this.setStyle('light', true);
     } else {
       this.setStyle('dark', true);
@@ -71,10 +73,10 @@ class App extends React.Component {
   
   setStyle(style, isAuto=false) {
     if (!isAuto) {
-      this.setState({style: style});
+      this.setState({style: style, isAuto: false});
       localStorage.setItem('style', style);
     } else {
-      this.setState({style: style});
+      this.setState({style: style, isAuto: true});
       localStorage.setItem('style', 'auto');
     }
 
@@ -92,21 +94,19 @@ class App extends React.Component {
 
     if ((style === 'light' || style ==='dark')) {
       this.setStyle(style);
-    } else if (style === 'auto') {
-      this.setAutoStyle();
     } else {
-      this.setStyle('light');
+      this.setAutoStyle();
     }
   }
   
   
   render () {
-    const {text, style} = this.state; 
+    const {text, style, isAuto} = this.state; 
     return (
       <ThemeProvider theme={ style === 'light' ? lightStyle : darkStyle}>
         <GlobalStyle />
         <div className="App w-70-ns center mw12 shadow">
-          <SettingsBar settingsText={text.settingsBar} onChangeLanguageUK={this.onChangeLanguageUK} 
+          <SettingsBar settingsText={text.settingsBar} style={style} auto={isAuto} onChangeLanguageUK={this.onChangeLanguageUK} 
           onChangeLanguageLT={this.onChangeLanguageLT} onChangeStyleLight={this.onChangeStyleLight}
           onChangeStyleDark={this.onChangeStyleDark} onChangeStyleAuto={this.onChageStyleAuto}/>
           <Header headerText={text.header}/>
