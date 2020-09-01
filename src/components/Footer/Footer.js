@@ -4,7 +4,7 @@ import './Footer.css';
 
 const Footer = ({footerText}) => {
   return (
-    <footer id='footer' className='bg-darkgray pa2'>
+    <footer id='footer' className='pa2'>
       <ul className='flex justify-center pa0 ma0'>
         <li className='list mh2 grow'><a className='a-gray nostyle' 
         href="https://github.com/macas5?tab=repositories" 

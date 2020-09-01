@@ -1,13 +1,12 @@
 import React from 'react';
 import Project from './Project/Project';
 
-import './Projects.css'
 import ghMark from './Project/GH-Mark-Light.png';
 
 const Projects = ({projectsText, lang}) => {
   return (
     <div>
-      <div id="projects" className='mv3 flex flex-wrap mw12 justify-center'>
+      <div id="projects" className='mv3 flex flex-wrap justify-center'>
         <h2 className='center w-100'>{projectsText.title}</h2>
         <Project projectName="SmartBrain" projectText={projectsText.project} lang={lang}/>
         <Project projectName="ThisSite" projectText={projectsText.project} lang={lang}/>

@@ -1,5 +1,6 @@
-.bg-darkgray {
+#footer {
   background-color: #343a40;
+  color: rgba(255,255,255,.75);
 }
 
 .gray {
@@ -15,8 +16,4 @@
 
 .nostyle, .nostyle:visited, .nostyle:hover {
   text-decoration: none;
-}
-
-#footer {
-  color: rgba(255,255,255,.75);
 }

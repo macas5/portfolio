@@ -6,7 +6,7 @@
   "frameworks": [
     "React"
   ],
-  "ability": [
+  "features": [
     "Puslapio reaktyvumas",
     "Kelių kalbų palaikymas",
     "Šviesus ir tamsus režimai"

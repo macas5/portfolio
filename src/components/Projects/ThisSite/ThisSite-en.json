@@ -6,7 +6,7 @@
   "frameworks": [
     "React"
   ],
-  "ability": [
+  "features": [
     "Responsive design",
     "Multiple language support",
     "Light and dark modes"

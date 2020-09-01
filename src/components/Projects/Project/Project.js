@@ -11,21 +11,21 @@ class Project extends React.Component {
       name: "",
       site: "",
       repo: "",
-      preview: "",
+      previewPicture: "",
       outline: "",
       frameworks: [],
-      ability: []
+      features: []
     }
   }
   setStates = (projectName, lang) => {
     const data = require(`../${projectName}/${projectName}-${lang}.json`);
-    const preview = require(`../${projectName}/${projectName}.png`);
+    const previewPicture = require(`../${projectName}/${projectName}.png`);
     
     const frameworks = data.frameworks.map((data, index) => {
       return <li key={index}>{data}</li>
     })
     
-    const ability = data.ability.map((data, index) => {
+    const features = data.features.map((data, index) => {
       return <li key={index}>{data}</li>
     })
     
@@ -36,8 +36,8 @@ class Project extends React.Component {
       repo: data.repo,
       outline: data.outline,
       frameworks: frameworks,
-      ability: ability,
-      preview: preview
+      features: features,
+      previewPicture: previewPicture
     })
   }
 
@@ -48,7 +48,7 @@ class Project extends React.Component {
   }
   
   render(){
-    const { name, site, repo, outline, frameworks, ability, preview } = this.state;
+    const { name, site, repo, outline, frameworks, features, previewPicture } = this.state;
     const { projectText } = this.props;
     return (
       <article className='shadow ma3 flex flex-wrap pa3 mw8' data-aos='zoom-out'>
@@ -70,23 +70,20 @@ class Project extends React.Component {
             :
               <div/>
             }
-            
-            {ability.length ? 
+            {features.length ? 
               <div>
                 <p>{projectText.features}:</p>
                 <ul className='tl'>
-                  {ability}
+                  {features}
                 </ul>
               </div>
             :
               <div/>
             }
-            
           </div>
         </div>
         <div className='w-100 w-40-l'>
-          <img src={preview} alt='Preview' className='w-100 pr-img center'/>
-  
+          <img src={previewPicture} alt='Preview' className='w-100 pr-img center'/>
           <div className='center ma3 flex flex-wrap justify-center'>
           {site !== "https://mkalinauskas.com" ?
               <a className='button-visit ma2 grow' 

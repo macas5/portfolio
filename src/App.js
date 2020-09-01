@@ -19,7 +19,6 @@ class App extends React.Component {
       lang: 'en',
       style: '',
       isAuto: false,
-      activeStyle: '',
       text: {
         "settingsBar": {},
         "header": {},
@@ -86,7 +85,7 @@ class App extends React.Component {
     const style = localStorage.getItem('style');
     const language = localStorage.getItem('language');
 
-    if ((language === 'en' || language ==='lt')) {
+    if (language ==='lt') {
       this.setTextLanguage(language);
     } else {
       this.setTextLanguage('en');
