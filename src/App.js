@@ -12,6 +12,7 @@ import Contact from './components/Contact/Contact';
 import SettingsBar from './components/SettingsBar/SettingsBar';
 import ScrollTopArrow from './components/ScrollTopArrow/ScrollTopArrow';
 import './App.css';
+import { Helmet } from 'react-helmet';
 
 class App extends React.Component {
   constructor() {
@@ -19,6 +20,7 @@ class App extends React.Component {
     this.state={
       lang: 'en',
       style: '',
+      themeColor: '#EAEAF7',
       isAuto: false,
       text: {
         "settingsBar": {},
@@ -72,11 +74,12 @@ class App extends React.Component {
   }
   
   setStyle(style, isAuto=false) {
+    const themeColor = style === 'dark' ? '#0F0F0F' : '#EAEAF7';
     if (!isAuto) {
-      this.setState({style: style, isAuto: false});
+      this.setState({style: style, isAuto: false, themeColor: themeColor});
       localStorage.setItem('style', style);
     } else {
-      this.setState({style: style, isAuto: true});
+      this.setState({style: style, isAuto: true, themeColor: themeColor});
       localStorage.setItem('style', 'auto');
     }
 
@@ -101,10 +104,13 @@ class App extends React.Component {
   
   
   render () {
-    const {text, style, isAuto} = this.state; 
+    const {text, style, isAuto, themeColor} = this.state; 
     return (
       <ThemeProvider theme={ style === 'light' ? lightStyle : darkStyle}>
         <GlobalStyle />
+        <Helmet>
+          <meta name="theme-color" content={themeColor} />
+        </Helmet>
         <div className="App w-70-ns center mw12 shadow overflow-hidden">
           <ScrollTopArrow />
           <SettingsBar settingsText={text.settingsBar} style={style} auto={isAuto} onChangeLanguageUK={this.onChangeLanguageUK} 

@@ -26,3 +26,6 @@ Great for creating dynamic stylings.
 
 ### [gh-pages](https://github.com/tschaub/gh-pages)
 Great for quick website hosting.
+
+### [helmet](https://github.com/nfl/react-helmet)
+Easy dynamic meta tag implementation.
