@@ -10,6 +10,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import SettingsBar from './components/SettingsBar/SettingsBar';
+import ScrollTopArrow from './components/ScrollTopArrow/ScrollTopArrow';
 import './App.css';
 
 class App extends React.Component {
@@ -104,7 +105,8 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={ style === 'light' ? lightStyle : darkStyle}>
         <GlobalStyle />
-        <div className="App w-70-ns center mw12 shadow">
+        <div className="App w-70-ns center mw12 shadow overflow-hidden">
+          <ScrollTopArrow />
           <SettingsBar settingsText={text.settingsBar} style={style} auto={isAuto} onChangeLanguageUK={this.onChangeLanguageUK} 
           onChangeLanguageLT={this.onChangeLanguageLT} onChangeStyleLight={this.onChangeStyleLight}
           onChangeStyleDark={this.onChangeStyleDark} onChangeStyleAuto={this.onChageStyleAuto}/>

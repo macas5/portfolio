@@ -11,8 +11,7 @@ import 'aos/dist/aos.css'
 import 'tachyons';
 
 AOS.init({
-  once: false,
-  disableMutationObserver: false,
+  once: true,
 })
 
 ReactDOM.render(

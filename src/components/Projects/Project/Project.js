@@ -51,7 +51,7 @@ class Project extends React.Component {
     const { name, site, repo, outline, frameworks, features, previewPicture } = this.state;
     const { projectText } = this.props;
     return (
-      <article className='shadow ma3 flex flex-wrap pa3 mw8' data-aos='zoom-out'>
+      <article className='shadow flex flex-wrap mv4 pa3 mw8' data-aos='zoom-out'>
         <h3 className='center w-100'>{name}</h3>
         <div className='flex flex-wrap w-100 w-60-l pa3 mr-auto'>
           {/* Project description */}

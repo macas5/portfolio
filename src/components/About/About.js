@@ -12,8 +12,8 @@ const About = ({aboutText}) => {
       <article className='w100 w32-l center shadow ma3 tl flex flex-wrap'>
         <h2 className='tc basis-100'>{aboutText.knowledge}</h2>
         <p className='ma3 basis-100'>{aboutText.knowledgeDesc}:</p>
-        <div className='flex flex-wrap'>
-          <ul className='mr5'>
+        <div className='flex'>
+          <ul className='mr5 w-50'>
             <li data-aos='fade-left' id='list-top-row' 
             data-aos-delay='50'>HTML</li>
             <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
@@ -27,7 +27,7 @@ const About = ({aboutText}) => {
             <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
             data-aos-delay='300'>C++</li>
           </ul>
-          <ul>
+          <ul className="w-50">
             <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
             data-aos-delay='350'>React</li>
             <li data-aos='fade-left' data-aos-anchor='#list-top-row' 
