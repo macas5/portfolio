@@ -2,6 +2,7 @@ import React from 'react';
 import Project from './Project/Project';
 
 import ghMark from './Project/GH-Mark-Light.png';
+import './Projects.css';
 
 const Projects = ({projectsText, lang}) => {
   return (
@@ -12,7 +13,7 @@ const Projects = ({projectsText, lang}) => {
         <Project projectName="ThisSite" projectText={projectsText.project} lang={lang}/>
       </div>
       <h3>{projectsText.moreWorks}</h3>
-      <a className='button-repo ma2 fl-basis-100 grow' 
+      <a className='button ma2 fl-basis-100 grow' 
       href='https://github.com/macas5?tab=repositories'
       target="_blank" rel="noopener noreferrer">
       <img src={ghMark} width='14px' alt='GitHub Logo'/> {projectsText.moreWorksButton}</a>
